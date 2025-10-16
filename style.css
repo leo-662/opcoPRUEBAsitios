@@ -1,0 +1,496 @@
+/* style.css - Optimizado para SEO/Velocidad y Conversión */
+
+/* **[MANTENIDO]** Desplazamiento Suave Nativo para navegación interna */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variables CSS */
+:root {
+    --primary-color: #007bff; /* Azul vibrante */
+    --secondary-color: #6c757d; /* Gris oscuro */
+    /* 🔑 CAMBIO: Color de acento para la venta (Verde) */
+    --accent-color-sale: #28a745; 
+    /* 🔑 CAMBIO: Color de Resalte en el Hero (Amarillo/Oro para el valor del ROI) */
+    --highlight-color: #ffc107; 
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --white: #fff;
+    --dark-blue: #0056b3;
+    --whatsapp-color: #25D366; 
+    --header-height: 80px;
+}
+
+/* Reset y Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--light-bg);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--dark-blue);
+}
+
+/* 🔑 CAMBIO: CTA Principal - Usar el color de Venta (Verde) */
+.btn {
+    display: inline-block;
+    background: var(--accent-color-sale); 
+    color: var(--white);
+    padding: 12px 25px; /* Ligeramente más grande para más impacto */
+    border-radius: 5px;
+    border: none; /* Asegurar que no haya borde predeterminado */
+    text-align: center;
+    transition: background-color 0.3s ease; 
+    margin-top: 20px;
+    font-size: 1.15em; /* Ligeramente más grande */
+}
+
+.btn:hover {
+    background: #1e7e34; /* Verde más oscuro al pasar el ratón */
+}
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    background: var(--primary-color); /* Los secundarios usan el azul original */
+}
+
+.btn-small:hover {
+    background: var(--dark-blue);
+}
+
+/* Header (Mantenido) */
+header {
+    background: var(--white);
+    color: var(--text-color);
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 150px; 
+    object-fit: contain;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* 🔑 CAMBIO: Estilos del Nuevo Hero (opco-hero-conversion) */
+/* Reemplaza la clase .hero original si no se usa el background image en el style.css */
+.opco-hero-conversion {
+    /* * NOTA: La imagen de fondo debe cargarse en línea en el <head> 
+     * o como CSS Crítico si es esencial para el LCP. 
+     * Aquí se aplican los estilos de texto del nuevo Hero:
+    */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)); /* Gradiente de oscurecimiento */
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+    min-height: 450px;
+}
+
+.opco-hero-conversion h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.opco-hero-conversion .highlight {
+    color: var(--highlight-color); /* Color Amarillo para resaltar el ROI */
+}
+
+.opco-hero-conversion p.hero-subtitle {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+
+/* Sections Generales (Mantenido) */
+section {
+    padding: 40px 0; 
+    margin-bottom: 0;
+}
+
+section:nth-of-type(even) {
+    background: var(--light-bg);
+}
+
+/* Services Section (Ahora Soluciones) */
+.services .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔑 CAMBIO: Color de Ícono a Primary para darle un toque más serio/empresarial */
+.service-item i {
+    font-size: 3em;
+    color: var(--primary-color); 
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.service-item p {
+    font-size: 0.95em;
+    color: var(--text-color);
+}
+
+/* Pricing Section (Ahora Planes) */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease; 
+    border: 2px solid transparent;
+}
+
+.pricing-card.featured {
+    border-color: var(--primary-color);
+    transform: scale(1.03);
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 🔑 CAMBIO: Nuevo estilo para la descripción del plan (tagline) */
+.pricing-card .tagline {
+    font-size: 1.05em;
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px; /* Reducido para meter el tagline */
+    color: var(--primary-color);
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+    padding: 8px 0;
+    font-size: 1.1em;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔑 CAMBIO: Ícono de Check/Venta en Verde (Color de conversión) */
+.pricing-card ul li i.fa-check-circle {
+    color: var(--accent-color-sale);
+    margin-right: 10px;
+}
+
+.pricing-card ul li i.fa-times-circle {
+    color: #dc3545;
+    margin-right: 10px;
+}
+
+.pricing-card .price {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+/* 🔑 ELIMINADO: Se elimina la sección de Calendly y sus estilos (Ya no es necesaria) */
+/* Se reasigna el espacio y enfoque al formulario simple de Contacto. */
+
+/* Social Media Section (Mantenido, pero reenfocado) */
+.social-media {
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 2.5em;
+    color: var(--primary-color);
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: var(--dark-blue);
+}
+
+/* Contact Section (Actualizado para el formulario de 3 campos) */
+.contact form {
+    max-width: 500px; /* 🔑 CAMBIO: Más pequeño para verse más fácil de llenar */
+    margin: 40px auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group select { /* 🔑 CAMBIO: Añadimos estilo para el select de objetivo */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* 🔑 ELIMINADO: Se elimina el estilo para email y textarea, ya que no se usan en el nuevo formulario de 3 campos */
+
+.contact-info {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+/* Footer (Mantenido) */
+footer {
+    background: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0;
+}
+
+/* WhatsApp Button (Mantenido) */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--whatsapp-color);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1DA851; 
+    transform: scale(1.1);
+}
+
+/* Estilos de Enlaces y Legal (Mantenido) */
+.footer-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.footer-link:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+.legal-page-content {
+    padding: 60px 0;
+    max-width: 800px;
+    margin: 40px auto;
+    line-height: 1.6;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.legal-page-content h2, .legal-page-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.legal-page-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.legal-page-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.legal-page-content ul li {
+    margin-bottom: 5px;
+}
+.legal-page-content hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 30px auto;
+    width: 50%;
+}
+
+
+/* Responsive Design (Mantenido y adaptado) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .opco-hero-conversion h1 { /* 🔑 CAMBIO: Usar la nueva clase del Hero */
+        font-size: 2.5em;
+    }
+
+    .service-grid, .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1.0);
+    }
+
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .opco-hero-conversion h1 { /* 🔑 CAMBIO: Usar la nueva clase del Hero */
+        font-size: 2em;
+    }
+
+    .opco-hero-conversion p {
+        font-size: 1em;
+    }
+
+    .social-icons a {
+        font-size: 2em;
+        margin: 0 10px;
+    }
+}
