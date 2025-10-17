@@ -1,258 +1,261 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Páginas Web que venden más: Transformamos su sitio web en un generador constante de llamadas, pedidos y clientes. Soluciones sin complicaciones para su negocio.">
-    <title>OPCO - Páginas Web que Venden: Soluciones para Aumentar Clientes</title>
-    
-        <link rel="preconnect" href="https://connect.facebook.net">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://formspree.io">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Páginas Web que venden más: Transformamos su sitio web en un generador constante de llamadas, pedidos y clientes. Soluciones sin complicaciones para su negocio.">
+    <title>OPCO - Páginas Web que Venden: Soluciones para Aumentar Clientes</title>
+    
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://formspree.io">
 
-        <link rel="preload" href="hero_exito_negocio.webp" as="image" fetchpriority="high"> 
-    
-        <link rel="icon" href="OPCO logo sin fondo.webp" type="image/webp" sizes="32x32">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="hero_exito_negocio.webp" as="image" fetchpriority="high"> 
+    
+    <link rel="icon" href="OPCO logo sin fondo.webp" type="image/webp" sizes="32x32">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <style>
-        /* CSS Crítico - Incluido directamente para un LCP óptimo */
-        html { scroll-behavior: smooth }
-        :root {
-            --primary-color:#007bff;
-            --secondary-color:#6c757d;
-            --accent-color-sale:#28a745; 
-            --highlight-color: #ffc107; 
-            --text-color:#333;--light-bg:#f8f9fa;--white:#fff;
-            --dark-blue:#0056b3;
-            --whatsapp-color:#25D366;
-            --header-height:80px
-        }
-        * { margin:0; padding:0; box-sizing:border-box }
-        body { font-family:'Arial',sans-serif; line-height:1.6; color:var(--text-color); background:var(--light-bg) }
-        .container { width:90%; max-width:1200px; margin:auto; overflow:hidden; padding:20px 0 }
-        h1,h2,h3 { color:var(--primary-color); margin-bottom:20px; text-align:center }
-        a { color:var(--primary-color); text-decoration:none }
-        .btn { display:inline-block; background:var(--accent-color-sale); color:var(--white); padding:12px 25px; border-radius:5px; text-align:center; transition:background-color .3s ease; margin-top:20px; font-size:1.15em; border:none; cursor:pointer }
+    <style>
+        /* CSS Crítico (Inline) - Asegura que el Hero cargue instantáneamente y corrige el diseño inicial */
+        html { scroll-behavior: smooth }
+        :root {
+            --primary-color:#007bff;
+            --secondary-color:#6c757d;
+            --accent-color-sale:#28a745;
+            --highlight-color: #ffc107;
+            --text-color:#333;--light-bg:#f8f9fa;--white:#fff;
+            --dark-blue:#0056b3;
+            --whatsapp-color:#25D366;
+            --header-height:80px
+        }
+        * { margin:0; padding:0; box-sizing:border-box }
+        body { font-family:'Arial',sans-serif; line-height:1.6; color:var(--text-color); background:var(--light-bg) }
+        .container { width:90%; max-width:1200px; margin:auto; overflow:hidden; padding:20px 0 }
+        h1,h2,h3 { color:var(--primary-color); margin-bottom:20px; text-align:center }
+        a { color:var(--primary-color); text-decoration:none }
+        .btn { display:inline-block; background:var(--accent-color-sale); color:var(--white); padding:12px 25px; border-radius:5px; text-align:center; transition:background-color .3s ease; margin-top:20px; font-size:1.15em; border:none; cursor:pointer }
         .btn:hover { background-color: #1e7e34; }
         .btn-small { padding: 8px 15px; font-size: 0.9em; background:var(--primary-color); }
         .btn-small:hover { background: var(--dark-blue); }
-        
-        /* Header */
-        header { background:var(--white); border-bottom:1px solid #ddd; box-shadow:0 2px 5px rgba(0,0,0,.1); position:sticky; top:0; z-index:1000; padding:1rem 0 }
-        header .container { display:flex; justify-content:space-between; align-items:center }
-        /* 🔑 CAMBIO: Logo en el header (Asegúrate que 'logo_opco.webp' esté en la misma carpeta) */
-        .logo img { height:50px; width:150px; object-fit: contain; }
-        nav ul { list-style:none }
-        nav ul li { display:inline; margin-left:20px }
-        nav ul li a { color:var(--text-color); font-weight:bold; padding:5px 0; transition:color .3s ease }
-        nav ul li a:hover { color:var(--primary-color) }
-        
-        /* 🔑 CAMBIO: Estilos del Nuevo HERO (opco-hero-conversion) */
-        .opco-hero-conversion { 
-            /* 🔑 CAMBIO CRÍTICO: Ruta de la imagen de fondo del Hero */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
-                        url('hero_exito_negocio.webp') no-repeat center center/cover;
-            /* FALLBACK si .webp no carga: */
+        
+        /* Header */
+        header { background:var(--white); border-bottom:1px solid #ddd; box-shadow:0 2px 5px rgba(0,0,0,.1); position:sticky; top:0; z-index:1000; padding:1rem 0 }
+        header .container { display:flex; justify-content:space-between; align-items:center }
+        .logo img { height:50px; width:150px; object-fit: contain; }
+        nav ul { list-style:none }
+        nav ul li { display:inline; margin-left:20px }
+        nav ul li a { color:var(--text-color); font-weight:bold; padding:5px 0; transition:color .3s ease }
+        nav ul li a:hover { color:var(--primary-color) }
+        
+        /* HERO (LCP Content) */
+        .opco-hero-conversion { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                                url('hero_exito_negocio.webp') no-repeat center center/cover;
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('hero_exito_negocio.jpg');
-            min-height: 450px;
-            color:var(--white); padding:100px 0; text-align:center 
-        }
-        .opco-hero-conversion h1 { font-size:2.8em; margin-bottom:10px; color:var(--white) }
-        .opco-hero-conversion .highlight { color: var(--highlight-color); }
-        .opco-hero-conversion p.hero-subtitle { font-size:1.3em; margin-bottom:30px; color:#ddd }
+            min-height: 450px;
+            color:var(--white); padding:100px 0; text-align:center 
+        }
+        .opco-hero-conversion h1 { font-size:2.8em; margin-bottom:10px; color:var(--white) }
+        .opco-hero-conversion .highlight { color: var(--highlight-color); }
+        .opco-hero-conversion p.hero-subtitle { font-size:1.3em; margin-bottom:30px; color:#ddd }
 
-        /* Media Query Crítico */
-        @media (max-width:768px){
-            header .container { flex-direction:column; text-align:center }
-            nav ul { margin-top:15px }
-            nav ul li { display:block; margin:10px 0 }
-            .opco-hero-conversion h1 { font-size:2.5em }
+        /* Media Query Crítico para el Hero */
+        @media (max-width:768px){
+            header .container { flex-direction:column; text-align:center }
+            nav ul { margin-top:15px }
+            nav ul li { display:block; margin:10px 0 }
+            .opco-hero-conversion h1 { font-size:2.5em }
             .opco-hero-conversion p.hero-subtitle { font-size:1.1em }
-        }
-    </style>
-    
-        <link rel="stylesheet" href="style.css"> 
+        }
+    </style>
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYMXSCQNBT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XYMXSCQNBT');
-    </script>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYMXSCQNBT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XYMXSCQNBT');
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                                <img src="logo_opco.webp" alt="Logo de OPCO" width="150" height="50"> 
-            </div>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#soluciones">Soluciones</a></li>                     <li><a href="#planes">Planes</a></li>                     <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo_opco.webp" alt="Logo de OPCO" width="150" height="50"> 
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#soluciones">Soluciones</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <section id="inicio" class="opco-hero-conversion"> 
-        <div class="container">
-            <h1>
+    <section id="inicio" class="opco-hero-conversion"> 
+        <div class="container">
+            <h1>
                 ¿Cansado de que su Web No le Genere Clientes?
                 <span class="highlight">Transforme su Web en su Mejor Vendedor.</span>
             </h1>
-            <p class="hero-subtitle">Páginas Web Fáciles de Usar, con un Proceso Probado para Atraer Llamadas, Pedidos y Clientes Locales.</p>
-            <a href="#contacto" class="btn hero-cta">
-                <i class="fas fa-calendar-alt"></i> Agenda una Llamada y Le Muestro Cómo Vender Más
-            </a>
-        </div>
-    </section>
-    
-    <section id="soluciones" class="services">
-        <div class="container">
-            <h2>Soluciones Claras Para Su Negocio (Sin Complicaciones)</h2>
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-desktop"></i>                     <h3>Web Vendedora: Atrae Clientes 24/7</h3>
-                    <p>Creamos su sitio web desde cero, con un diseño que convierte visitantes en **llamadas y pedidos**. Orientado a resultados, no solo a que se vea "bonito".</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-shield-alt"></i>                     <h3>Tranquilidad Total: Nos Encargamos de Todo</h3>
-                    <p>Registramos su dominio, le damos alojamiento web (*hosting* rápido) y nos aseguramos de que su página **siempre esté en línea y segura**. Usted solo se enfoca en su negocio.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-chart-bar"></i>                     <h3>Crecimiento y Resultados Medibles</h3>
-                    <p>No adivinamos. Usamos nuestra experiencia (y sí, algo de tecnología) para optimizar los textos y el diseño. El resultado: **verá más clientes** y le mostraremos cómo está funcionando.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p class="hero-subtitle">Páginas Web Fáciles de Usar, con un Proceso Probado para Atraer Llamadas, Pedidos y Clientes Locales.</p>
+            <a href="#contacto" class="btn hero-cta">
+                <i class="fas fa-calendar-alt"></i> Agenda una Llamada y Le Muestro Cómo Vender Más
+            </a>
+        </div>
+    </section>
+    
+    <section id="soluciones" class="services">
+        <div class="container">
+            <h2>Soluciones Claras Para Su Negocio (Sin Complicaciones)</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Vendedora: Atrae Clientes 24/7</h3>
+                    <p>Creamos su sitio web desde cero, con un diseño que convierte visitantes en **llamadas y pedidos**. Orientado a resultados, no solo a que se vea "bonito".</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Tranquilidad Total: Nos Encargamos de Todo</h3>
+                    <p>Registramos su dominio, le damos alojamiento web (*hosting* rápido) y nos aseguramos de que su página **siempre esté en línea y segura**. Usted solo se enfoca en su negocio.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Crecimiento y Resultados Medibles</h3>
+                    <p>No adivinamos. Usamos nuestra experiencia (y sí, algo de tecnología) para optimizar los textos y el diseño. El resultado: **verá más clientes** y le mostraremos cómo está funcionando.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="planes" class="pricing">
-        <div class="container">
-            <h2>Planes Clave para Empezar a Vender en Internet</h2>
-            <p>Elija el plan que se adapte al tamaño de su negocio. **Sin costos ocultos.**</p>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Paquete Inicial</h3>
-                    <p class="tagline">La base sólida para empezar a atraer clientes.</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> **Web Profesional** (Orientada a ventas)</li>
-                        <li><i class="fas fa-check-circle"></i> Dominio y Hosting por 1 año (**Incluido**)</li>
-                        <li><i class="fas fa-check-circle"></i> Integración con WhatsApp/Teléfono</li>
-                        <li><i class="fas fa-check-circle"></i> Formulario de Contacto Directo</li>
-                        <li><i class="fas fa-times-circle"></i> **NO incluye** Tienda en Línea</li>
-                    </ul>
-                    <p class="price">Desde $6,490 MXN</p>
-                    <a href="#contacto" class="btn btn-small">Quiero Este Paquete</a>
-                </div>
-                <div class="pricing-card featured">
-                    <h3>Paquete Crecimiento</h3>
-                    <p class="tagline">Para negocios que necesitan citas y más contactos.</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Todo el Paquete Inicial</li>
-                        <li><i class="fas fa-check-circle"></i> **Sistema de Citas / Reservas**</li>
-                        <li><i class="fas fa-check-circle"></i> Soporte Rápido (Lunes a Sábado)</li>
-                        <li><i class="fas fa-check-circle"></i> Configuración de Google Maps/Negocio</li>
-                        <li><i class="fas fa-times-circle"></i> **NO incluye** Tienda en Línea</li>
-                    </ul>
-                    <p class="price">Desde $14,490 MXN</p>
-                    <a href="#contacto" class="btn btn-small">Quiero Este Paquete</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Paquete Éxito (Tienda Online)</h3>
-                    <p class="tagline">Para empezar a vender sus productos las 24 horas.</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> **Diseño de Tienda Online Completa**</li>
-                        <li><i class="fas fa-check-circle"></i> Integración con métodos de pago (ej. PayPal)</li>
-                        <li><i class="fas fa-check-circle"></i> Inventario y Gestión de Pedidos</li>
-                        <li><i class="fas fa-check-circle"></i> Soporte 24/7 y Monitoreo Avanzado</li>
-                        <li><i class="fas fa-check-circle"></i> **Incluye** Dominio, Hosting y Certificado SSL</li>
-                    </ul>
-                    <p class="price">Desde $32,490 MXN</p>
-                    <a href="#contacto" class="btn btn-small">Quiero Mi Tienda Online</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="planes" class="pricing">
+        <div class="container">
+            <h2>Planes Clave para Empezar a Vender en Internet</h2>
+            <p>Elija el plan que se adapte al tamaño de su negocio. **Sin costos ocultos.**</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Paquete Inicial</h3>
+                    <p class="tagline">La base sólida para empezar a atraer clientes.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> **Web Profesional** (Orientada a ventas)</li>
+                        <li><i class="fas fa-check-circle"></i> Dominio y Hosting por 1 año (**Incluido**)</li>
+                        <li><i class="fas fa-check-circle"></i> Integración con WhatsApp/Teléfono</li>
+                        <li><i class="fas fa-check-circle"></i> Formulario de Contacto Directo</li>
+                        <li><i class="fas fa-times-circle"></i> **NO incluye** Tienda en Línea</li>
+                    </ul>
+                    <p class="price">Desde $6,490 MXN</p>
+                    <a href="#contacto" class="btn btn-small">Quiero Este Paquete</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Paquete Crecimiento</h3>
+                    <p class="tagline">Para negocios que necesitan citas y más contactos.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Todo el Paquete Inicial</li>
+                        <li><i class="fas fa-check-circle"></i> **Sistema de Citas / Reservas**</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte Rápido (Lunes a Sábado)</li>
+                        <li><i class="fas fa-check-circle"></i> Configuración de Google Maps/Negocio</li>
+                        <li><i class="fas fa-times-circle"></i> **NO incluye** Tienda en Línea</li>
+                    </ul>
+                    <p class="price">Desde $14,490 MXN</p>
+                    <a href="#contacto" class="btn btn-small">Quiero Este Paquete</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Paquete Éxito (Tienda Online)</h3>
+                    <p class="tagline">Para empezar a vender sus productos las 24 horas.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> **Diseño de Tienda Online Completa**</li>
+                        <li><i class="fas fa-check-circle"></i> Integración con métodos de pago (ej. PayPal)</li>
+                        <li><i class="fas fa-check-circle"></i> Inventario y Gestión de Pedidos</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte 24/7 y Monitoreo Avanzado</li>
+                        <li><i class="fas fa-check-circle"></i> **Incluye** Dominio, Hosting y Certificado SSL</li>
+                    </ul>
+                    <p class="price">Desde $32,490 MXN</p>
+                    <a href="#contacto" class="btn btn-small">Quiero Mi Tienda Online</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="social-media" class="social-media">
-        <div class="container">
-            <h2>Confianza y Casos de Éxito</h2>             <p>Vea cómo hemos ayudado a negocios como el suyo a **vender más**.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/OPCOMERCIO1/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/company/opcomercio/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/opco_mkt/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
+    <section id="social-media" class="social-media">
+        <div class="container">
+            <h2>Confianza y Casos de Éxito</h2>
+            <p>Vea cómo hemos ayudado a negocios como el suyo a **vender más**.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/OPCOMERCIO1/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/opcomercio/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/opco_mkt/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
 
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>Paso 1: Hablemos de su Objetivo de Ventas.</h2>
-            <p>Solo necesitamos **3 datos**. Le contactaremos en menos de 2 horas hábiles para ver cómo le ayudamos a vender más.</p>
-            <form action="https://formspree.io/f/mwpbgyvp" method="POST">
-                <div class="form-group">
-                    <label for="nombre">Su Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Armando López">
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Su Teléfono (El más fácil para contactarle):</label>
-                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 55 1234 5678">
-                </div>
-                <div class="form-group">
-                    <label for="objetivo">¿Cuál es su Objetivo Principal con la nueva Web?</label>
-                    <select id="objetivo" name="objetivo" required>
-                        <option value="" disabled selected>Seleccione una meta clara...</option>
-                        <option value="aumentar-llamadas">Aumentar las llamadas a mi negocio</option>
-                        <option value="conseguir-citas">Conseguir más citas/reservas</option>
-                        <option value="vender-productos">Vender mis productos en línea</option>
-                        <option value="otro">Otro (Especifique en el mensaje)</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn">
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Paso 1: Hablemos de su Objetivo de Ventas.</h2>
+            <p>Solo necesitamos **3 datos**. Le contactaremos en menos de 2 horas hábiles para ver cómo le ayudamos a vender más.</p>
+            <form action="https://formspree.io/f/mwpbgyvp" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Su Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Armando López">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Su Teléfono (El más fácil para contactarle):</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 55 1234 5678">
+                </div>
+                <div class="form-group">
+                    <label for="objetivo">¿Cuál es su Objetivo Principal con la nueva Web?</label>
+                    <select id="objetivo" name="objetivo" required>
+                        <option value="" disabled selected>Seleccione una meta clara...</option>
+                        <option value="aumentar-llamadas">Aumentar las llamadas a mi negocio</option>
+                        <option value="conseguir-citas">Conseguir más citas/reservas</option>
+                        <option value="vender-productos">Vender mis productos en línea</option>
+                        <option value="otro">Otro (Especifique en el mensaje)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">
                     Enviar y Agendar mi Llamada
                 </button>
                 <input type="hidden" name="_subject" value="Nuevo Lead de Web - Objetivo Vender Más">
-            </form>
+            </form>
 
-            <div class="contact-info">
+            <div class="contact-info">
                 <h3>O llámenos directamente:</h3>
-                <p><i class="fas fa-phone"></i> **+52 662 458 7090** (Lunes a Viernes)</p>
-                <p><i class="fas fa-map-marker-alt"></i> Hermosillo, Sonora, México</p>
-            </div>
-        </div>
-    </section>
+                <p><i class="fas fa-phone"></i> **+52 662 458 7090** (Lunes a Viernes)</p>
+                <p><i class="fas fa-map-marker-alt"></i> Hermosillo, Sonora, México</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 OPCO. Todos los derechos reservados. <a href="aviso-privacidad.html" target="_blank" class="footer-link">Aviso de Privacidad</a></p>
-        </div>
-    </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 OPCO. Todos los derechos reservados. <a href="aviso-privacidad.html" target="_blank" class="footer-link">Aviso de Privacidad</a></p>
+        </div>
+    </footer>
 
-    <a href="https://wa.me/526624587090?text=Hola%2C%20estoy%20interesado%20en%20crear%20una%20web%20que%20me%20genere%20m%C3%A1s%20ventas.%20%C2%BFMe%20pueden%20ayudar%3F" class="whatsapp-btn" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/526624587090?text=Hola%2C%20estoy%20interesado%20en%20crear%20una%20web%20que%20me%20genere%20m%C3%A1s%20ventas.%20%C2%BFMe%20pueden%20ayudar%3F" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-            <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '722707801541556');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=722707801541556&ev=PageView&noscript=1"
-    /></noscript>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '722707801541556');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=722707801541556&ev=PageView&noscript=1"
+    /></noscript>
 
-    <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
