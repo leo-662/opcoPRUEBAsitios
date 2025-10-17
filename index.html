@@ -50,9 +50,9 @@
         nav ul li a { color:var(--text-color); font-weight:bold; padding:5px 0; transition:color .3s ease }
         nav ul li a:hover { color:var(--primary-color) }
         
-        /* HERO - Fusión (CORRECCIÓN DE RUTA DE IMAGEN) */
+        /* HERO - Fusión (Ruta Relativa para GitHub Pages) */
         .opco-hero-conversion { 
-            /* 🔑 CORRECCIÓN DE IMAGEN: Quitamos el '/' para usar una ruta relativa */
+            /* 🔑 RUTA RELATIVA: 'hero_fusion.webp' (la más compatible con GitHub subcarpetas) */
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
                         url('hero_fusion.webp') no-repeat center center/cover;
             background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('hero_fusion.jpg');
@@ -93,18 +93,27 @@
         /* Pricing Section (CTA de Cita) - CORRECCIÓN DE COLOR DE TEXTO */
         .pricing { 
             padding: 60px 0; 
-            background: var(--primary-color);
+            background: var(--light-bg); /* Cambiamos a fondo CLARO para que el texto azul contraste */
             text-align: center;
         }
         .pricing h2, .pricing p {
-            /* 🔑 CORRECCIÓN DE TEXTO: Forzamos el color blanco para asegurar la visibilidad */
-            color: var(--white);
+            /* 🔑 CORRECCIÓN DE TEXTO: Forzamos el color primario (azul) para el contraste */
+            color: var(--primary-color);
             font-weight: bold;
         }
 
         /* Contact Section */
-        .contact form { max-width: 500px; margin: 40px auto; background: var(--white); padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .form-group { margin-bottom: 20px; }
+        .contact form { 
+            max-width: 500px; 
+            margin: 40px auto; 
+            background: var(--white); 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            /* 🔑 CORRECCIÓN: Centrar el botón final */
+            text-align: center; 
+        }
+        .form-group { text-align: left; margin-bottom: 20px; } /* Los campos de texto se alinean a la izquierda */
         .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: var(--text-color); }
         .form-group input[type="text"],
         .form-group input[type="tel"],
