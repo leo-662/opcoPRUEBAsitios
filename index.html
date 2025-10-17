@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://formspree.io">
 
-    <link rel="preload" href="/hero_fusion.webp" as="image" fetchpriority="high"> 
+    <link rel="preload" href="hero_fusion.webp" as="image" fetchpriority="high"> 
     <link rel="icon" href="OPCO logo sin fondo.webp" type="image/webp" sizes="32x32">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -50,12 +50,12 @@
         nav ul li a { color:var(--text-color); font-weight:bold; padding:5px 0; transition:color .3s ease }
         nav ul li a:hover { color:var(--primary-color) }
         
-        /* HERO - Fusión (Solución de Imagen con ruta absoluta /) */
+        /* HERO - Fusión (CORRECCIÓN DE RUTA DE IMAGEN) */
         .opco-hero-conversion { 
-            /* 🔑 CORRECCIÓN DE IMAGEN: Usamos ruta absoluta / y background-position center */
+            /* 🔑 CORRECCIÓN DE IMAGEN: Quitamos el '/' para usar una ruta relativa */
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-                        url('/hero_fusion.webp') no-repeat center center/cover;
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('/hero_fusion.jpg');
+                        url('hero_fusion.webp') no-repeat center center/cover;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('hero_fusion.jpg');
             min-height: 450px;
             color:var(--white); padding:100px 0; text-align:center 
         }
@@ -70,7 +70,7 @@
         
         /* Contenedores para Centrar los CTAs */
         .cta-container {
-            text-align: center; /* 🔑 CORRECCIÓN: Centra los botones en sus contenedores */
+            text-align: center;
             margin-top: 30px;
         }
 
@@ -90,14 +90,14 @@
         .service-item h3 { color: var(--primary-color); margin-bottom: 10px; font-size: 1.5em; }
         .service-item p { font-size: 0.95em; color: var(--text-color); }
 
-        /* Pricing Section (CTA de Cita) */
+        /* Pricing Section (CTA de Cita) - CORRECCIÓN DE COLOR DE TEXTO */
         .pricing { 
             padding: 60px 0; 
             background: var(--primary-color);
             text-align: center;
         }
         .pricing h2, .pricing p {
-            /* 🔑 CORRECCIÓN: Asegura contraste fuerte */
+            /* 🔑 CORRECCIÓN DE TEXTO: Forzamos el color blanco para asegurar la visibilidad */
             color: var(--white);
             font-weight: bold;
         }
@@ -195,7 +195,7 @@
                 </div>
             </div>
             <div class="cta-container">
-                 <a href="#contacto" class="btn btn-small">¡Empecemos a Planear su Crecimiento!</a>
+                <a href="#contacto" class="btn btn-small">¡Empecemos a Planear su Crecimiento!</a>
             </div>
         </div>
     </section>
@@ -227,7 +227,7 @@
         <div class="container">
             <h2>¿Listo para dar el siguiente paso?</h2>
             <p>Nuestras soluciones son personalizadas. El valor se define después de nuestra consulta gratuita.</p>
-             <a href="#contacto" class="btn hero-cta">
+            <a href="#contacto" class="btn hero-cta">
                 <i class="fas fa-clock"></i> Agendar Mi Consulta Estratégica Gratuita
             </a>
         </div>
